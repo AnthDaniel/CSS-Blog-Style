@@ -172,3 +172,51 @@
     right: 10px;
     top: 8px;
 }
+/*Lineas para los H4*/
+
+.archive h4.ds-related-posts-header,
+.archive #respond h3,
+.archive h1#comments,
+.archive #sidebar h4.widgettitle {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+
+/*Agregar Linea Izquierda y Derecha*/
+
+.archive h4.ds-related-posts-header:before,
+.archive h4.ds-related-posts-header:after,
+.archive #respond h3 span:before,
+.archive #respond h3 span:after,
+.archive h1#comments:before,
+.archive h1#comments:after,
+.archive #sidebar h4.widgettitle:before,
+.archive #sidebar h4.widgettitle:after {
+    position: absolute;
+    top: 30%;
+    overflow: hidden;
+    width: 50%;
+    height: 5px;
+    content: '\a0';
+    background-color: #ff69b4;
+}
+
+.archive h4.ds-related-posts-header:before,
+.archive #respond h3 span:before,
+.archive h1#comments:before,
+.archive #sidebar h4.widgettitle:before {
+    margin-left: -52%;
+}
+
+.archive h4.ds-related-posts-header:after,
+.archive #respond h3 span:after,
+.archive h1#comments:after,
+.archive #sidebar h4.widgettitle:after {
+    margin-left: 2%;
+}
