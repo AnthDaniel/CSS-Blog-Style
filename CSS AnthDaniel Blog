@@ -138,3 +138,37 @@
     background: #f5f5f5;
     margin-left: 10px;
 }
+/*Caja de Busqueda*/
+
+.archive #sidebar .widget_search input#s,
+.archive #sidebar .widget_search input#searchsubmit {
+    border-radius: 0;
+}
+
+.archive #sidebar .widget_search input#s {
+    border: 5px solid #f5f5f5;
+}
+
+/*Esconder Boton de Busqueda*/
+
+.archive #sidebar .widget_search input#searchsubmit {
+    background: transparent;
+    color: transparent;
+    border: none;
+    z-index: 1;
+}
+
+
+/*Agregar Icono de Lupa*/
+
+.archive #sidebar .widget_search #searchform:after {
+    content: '\55';
+    font-family: 'ETModules';
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ff69b4;
+    right: 10px;
+    top: 8px;
+}
