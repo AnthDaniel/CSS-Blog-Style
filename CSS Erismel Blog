@@ -3,3 +3,8 @@
 /***Sidebar***/
 
 /*Remover linea*/
+@media all and (min-width: 981px) {
+    .single #main-content .container:before {
+        display: none;
+    }
+}
